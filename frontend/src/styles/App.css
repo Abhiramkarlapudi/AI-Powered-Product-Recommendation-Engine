@@ -1,0 +1,253 @@
+.App {
+    text-align: center;
+}
+
+.App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+}
+
+.App-main {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Panel Layout */
+.left-panel,
+.right-panel {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.center-panel {
+    width: 60%;
+}
+
+/* Product Catalog Styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    word-break: break-word;
+    /* Allows long words to break and wrap */
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+
+.product-price {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Placeholder styles */
+.user-preferences,
+.browsing-history,
+.recommendations {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px dashed #aaa;
+}
+
+.user-preferences h2,
+.browsing-history h2,
+.recommendations h2 {
+    margin-top: 0;
+}
+
+/* Recommendation Button */
+.recommend-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    margin-bottom: 20px;
+    word-break: break-word;
+    /* Allows long words to break and wrap */
+}
+
+.recommend-btn:hover {
+    background-color: #0056b3;
+}
+
+.recommend-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Recommendation List */
+.recommendation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.recommendation-card {
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #f0f7ff;
+}
+
+.recommendation-explanation {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #333;
+    margin: 8px 0 0 0;
+    word-break: break-word;
+    /* Allows long words to break and wrap */
+}
+
+/* History List */
+.history-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0 0 0;
+}
+
+.history-item {
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.clear-btn:hover {
+    background-color: #c82333;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-group {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.checkbox-group label {
+    display: block;
+    font-weight: normal;
+}
+
+/* Preference Buttons */
+.preference-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.apply-btn,
+.clear-prefs-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.apply-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.apply-btn:hover {
+    background-color: #218838;
+}
+
+.clear-prefs-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.clear-prefs-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Recommendation Header & "X" Button */
+.recommendations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recommendations-header h2 {
+    margin: 0;
+}
+
+.clear-recs-btn {
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    color: #aaa;
+    cursor: pointer;
+    padding: 0 5px;
+    line-height: 1;
+}
+
+.clear-recs-btn:hover {
+    color: #333;
+}
